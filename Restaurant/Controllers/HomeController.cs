@@ -39,6 +39,11 @@ namespace Restaurant.Controllers
             return View();
         }
 
+        public IActionResult Products() { 
+            return View();
+        
+        }
+
 
         [HttpPost]
         public IActionResult Validate(string pedido , int ID)
