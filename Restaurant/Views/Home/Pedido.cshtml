@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+   
+}
+
+<div class="form_container">
+    <form asp-controller="Home" asp-action="Validate" asp-route-id ="@ViewData["Mesa"]" method="post">
+
+        <input type="text" name="pedido" value="" placeholder="Seu Pedido" />
+        <h1> Pedido para a mesa @ViewData["Mesa"]</h1>
+        <p class="@ViewData["less_class"]">Este produto não existe</p>
+        <button class="send_button" type="submit">Enviar</button>
+    </form>
+</div>

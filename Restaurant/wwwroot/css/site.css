@@ -1,0 +1,89 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+
+}
+
+.jpcontainer {
+
+
+  text-align: center;
+  background-color: aliceblue;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  text-align: center;
+  padding: 2px;
+  box-sizing: border-box;
+  height: 30%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.form_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+ 
+  height: 1000px;
+}
+
+.form_container input{
+  width: 400px;
+  height: 75px;
+  padding: 15px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.send_button{
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c1c1c1
+}
+
+main {
+  height: 1000px;
+}
+
+.dn{
+  display: none;
+}
+
+.logo{
+  width: 150px;
+}
+
+.container-fluid{
+  text-align: center;
+}
