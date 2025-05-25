@@ -2,12 +2,12 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="jpcontainer">
-     <div class="jpform">
-         <form>
+<div class="jpcontainer indexcontainer">
+     <div class="jpform indexform">
+         <form asp-controller="Home" asp-action="Pedido"  method="post" class="indexform">
              <label>Mesa</label>
-             <input type="text" name="" value="" placeholder="Mesa"/>
-
+             <input type="text" name="mesa" placeholder="Mesa"/>
+             <button type="submit"> Fazer pedido </button>
 
 
 

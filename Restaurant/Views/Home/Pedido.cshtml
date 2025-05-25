@@ -5,12 +5,12 @@
    
 }
 
-<div class="form_container">
-    <form asp-controller="Home" asp-action="Validate" asp-route-id ="@ViewData["Mesa"]" method="post">
+<div class="orderform_container">
+    <form asp-controller="Home" asp-action="Validate" asp-route-id ="@ViewData["Mesa"]" method="post" class="orderform">
 
         <input type="text" name="pedido" value="" placeholder="Seu Pedido" />
-        <h1> Pedido para a mesa @ViewData["Mesa"]</h1>
+        <h1>@ViewData["Mesa"]</h1>
         <p class="@ViewData["less_class"]">Este produto não existe</p>
-        <button class="send_button" type="submit">Enviar</button>
+        <button class="order_button" type="submit">Enviar</button>
     </form>
 </div>

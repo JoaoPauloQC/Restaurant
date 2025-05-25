@@ -2,6 +2,28 @@ html {
   font-size: 14px;
 }
 
+
+@keyframes degrade {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25%{
+
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+
+
+  100%{
+    background-position: 0% 50%;
+  }
+  
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -30,7 +52,7 @@ body {
 
 
   text-align: center;
-  background-color: aliceblue;
+  
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -109,29 +131,302 @@ main {
 }
 
 .jpcard {
-  border-radius: 5px;
-  border: 2px solid black;
+    height: 400px;
+    border-radius: 20px;
+    border: 2px solid rgb(239 239 239);
+    padding: 20px;
+    box-shadow: -4px 2px 4px 1px #cbcbcb12;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.3fr;
 }
 
 .jpcard h1 {
   font-size: 1rem;
 }
 
-.jpcard {
-  padding: 20px;
-}
+
 
 .jpcard button {
-  display: grid;
-  width: 80%;
-  height: 50px;
-  border: 1px solid;
-  border-radius: 5px;
-  background-color: greenyellow;
-  align-items: center;
+ color: white;
+    display: grid;
+    width: 80%;
+    height: 50px;
+    border: 1px solid #f91517;
+    border-radius: 5px;
+    background-color: #f91517;
+    align-items: center;
+    transition: 0.2s ease-in;
 }
+
 
 .buybutton-jpcontainer {
   display: grid;
   justify-items: center;
+}
+
+
+.jpcard button:hover {
+  background-color: white;
+  border: 1px solid #f91517;
+  color: #f91517;
+  
+}
+
+.jpaddcontainer{
+  height: 50vh;
+  margin-top: 100px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  
+
+}
+
+
+
+.jpaddcontainer label{
+  font-size: 1.5rem;
+
+}
+
+.jpaddcontainer input{
+  width: 80%;
+}
+
+.addformcontainer{
+  padding: 0px 20px 20px 20px;
+  border: 0.5px solid rgba(255, 0, 0, 0.473);
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  
+}
+
+.addformcontainer form{
+  height: 600px;
+  padding: 2px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+.addformcontainer input{
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  background-color: #e7e7e723;
+  border-bottom: 0.25px solid rgb(112, 112, 112);
+  height: 40px;
+  padding: 5px;
+  transition: 0.15s linear;
+}
+
+.addformcontainer input:hover{
+  border: 2px solid #f91517;
+  border-radius: 3px;
+  background-color: white;
+}
+
+
+.addformcontainer button{
+  width: 200px;
+  height: 40px;
+  background-color: #f91517;
+  border: 1px solid #fffffe;
+  border-radius: 5px;
+  color: white;
+  transition: 0.1s linear;
+}
+
+.addformcontainer button:hover{
+  background-color: white;
+  border: 1px solid #f91517 ;
+  color: #f91517;
+}
+
+.Product_price{
+  color: green;
+}
+
+
+
+.table_form_container{
+  width: 600px;
+
+}
+
+.indexcontainer{
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid #ecd3d3fa;
+  box-shadow: -1px 1px 4px 1px #0000001a;;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.indexform{
+  width: 100%;
+  height: 100%;
+}
+
+.indexcontainer button{
+  width: 150px;
+  height: 50px;
+  background-color: #f91517;
+  background: #592525;
+ background: #592525;
+  background: linear-gradient(70deg, rgba(89, 37, 37, 1) 0%, rgba(230, 0, 0, 1) 50%, rgba(255, 168, 168, 1) 100%);
+  background-size: 250%;
+  animation: degrade 5s linear infinite alternate;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.25rem;
+  transition: 0.8s ease-out ;
+  border-radius: 5px;
+}
+
+.indexcontainer label{
+  font-size: 2rem;
+}
+
+.indexcontainer button:hover{
+  background-color: white;
+  border: 2px solid #f91517;
+  color: #f91517;
+  background: none;
+
+}
+
+.indexcontainer input{
+  border: 1px solid rgba(54, 54, 54, 0.418);
+  border-radius: 5px;
+  width: 40%;
+  height: 50px;
+  padding: 10px;
+  transition: 0.3s linear;
+}
+
+.indexcontainer input:hover{
+  outline: none;
+  border: 1px solid #f91517;
+}
+
+
+.orderform{
+  width: 100%;
+  height: 300px;
+
+}
+
+.orderform_container{
+  
+  border-radius: 5px;
+  box-shadow: -1px 1px 4px 1px #0000001a;
+  width: 500px;
+  max-width: 70vw;
+  height: 800px;
+  max-height: 60vh;
+  margin-top: 10vh;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.orderform input{
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  padding: 10px;
+  border: 0.1px solid rgba(0, 0, 0, 0.281);
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+
+.orderform input:hover , input:focus , input:active{
+  border: 1px solid #f91517;
+  outline: none;
+}
+
+
+.order_button{
+  width: 30vw;
+  max-width: 200px;
+  height: 40px;
+  border: white;
+  border-radius: 5px ;
+  background-color: #f91517;
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.2s linear;
+}
+
+.order_button:hover{
+  background-color: white;
+  color: #f91517;
+  border: 1.5px solid #f91517;
+  
+}
+
+.navbar-nav{
+  justify-content: center;
+  gap: 30px;
+}
+
+.logo{
+  display: none;
+  
+}
+
+@media screen and (max-width: 768px ) {
+  .Lista{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .Lista-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding-bottom: 5px;
+  }
+
+  .jpcard{
+    height: auto;
+    grid-template-rows: 0.4fr 0.3fr 0.1fr;
+    row-gap: 10px;
+  }
+  
+  .Lista-container img{
+    max-height: fit-content;
+  }
+}
+
+
+.nav-link::after{
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  left: 0;
+  background-color: #f91517;
+  transition: 0.3s linear;
+}
+
+li:hover .nav-link::after{
+  width: 100%;
+
+}
+
+li:hover .text-dark{
+  color: #f91517 !important;
+
 }
