@@ -258,12 +258,15 @@ main {
 
 .indexcontainer{
   width: 400px;
-  height: 400px;
+  
   padding: 20px;
   border: 1px solid #ecd3d3fa;
   box-shadow: -1px 1px 4px 1px #0000001a;;
   border-radius: 5px;
   margin-top: 100px;
+  height: 800px;
+  max-height: 60vh;
+  max-width: 90vw;
 }
 
 .indexform{
