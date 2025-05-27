@@ -11,15 +11,16 @@ namespace Restaurant.Data
         }
 
 
+        public DbSet<MesaItem> mesasitens { get; set; }
         public DbSet<Mesa> mesas { get; set; }
         public DbSet<Item> Itens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-
             modelBuilder.Entity<MesaItem>()
-            .HasKey(mi => new { mi.MesaId, mi.ItemId });
+                .HasKey(m => m.Id);
+
 
             modelBuilder.Entity<MesaItem>()
                 .HasOne(mi => mi.mesa)
@@ -30,21 +31,37 @@ namespace Restaurant.Data
                 .HasOne(mi => mi.item)
                 .WithMany(i => i.MesaItens)
                 .HasForeignKey(mi => mi.ItemId);
-        
 
-            modelBuilder.Entity<Mesa>().HasData(
-                    new Mesa { MesaId = 1, StatusId = 1  }
-
-
-                );
 
             modelBuilder.Entity<Status>().HasData(
 
-                new Status { StatusId = 1 , Name = "Aberta" },
-                new Status { StatusId = 2 , Name = "Fechada" }
+                new Status { StatusId = 1, Name = "Aberta" },
+                new Status { StatusId = 2, Name = "Fechada" }
 
 
                 );
+
+            modelBuilder.Entity<Mesa>().HasData(
+                    new Mesa { MesaId = 1, StatusId = 1  },
+                    new Mesa { MesaId = 2, StatusId = 1 },
+                    new Mesa { MesaId = 3, StatusId = 1 },
+                    new Mesa { MesaId = 4, StatusId = 1 },
+                    new Mesa { MesaId = 5, StatusId = 1 },
+                    new Mesa { MesaId = 6, StatusId = 1 },
+                    new Mesa { MesaId = 7, StatusId = 1 },
+                    new Mesa { MesaId = 8, StatusId = 1 },
+                    new Mesa { MesaId = 9, StatusId = 1 },
+                    new Mesa { MesaId = 10, StatusId = 1 },
+                    new Mesa { MesaId = 11, StatusId = 1 },
+                    new Mesa { MesaId = 12, StatusId = 1 },
+                    new Mesa { MesaId = 13, StatusId = 1 },
+                    new Mesa { MesaId = 14, StatusId = 1 },
+                    new Mesa { MesaId = 15, StatusId = 1 }
+
+
+                );
+
+            
 
 
             modelBuilder.Entity<Item>().HasData(

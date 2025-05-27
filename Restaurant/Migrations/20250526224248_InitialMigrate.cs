@@ -60,23 +60,25 @@ namespace Restaurant.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MesaItem",
+                name: "mesasitens",
                 columns: table => new
                 {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     MesaId = table.Column<int>(type: "int", nullable: false),
                     ItemId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MesaItem", x => new { x.MesaId, x.ItemId });
+                    table.PrimaryKey("PK_mesasitens", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_MesaItem_Itens_ItemId",
+                        name: "FK_mesasitens_Itens_ItemId",
                         column: x => x.ItemId,
                         principalTable: "Itens",
                         principalColumn: "ItemId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_MesaItem_mesas_MesaId",
+                        name: "FK_mesasitens_mesas_MesaId",
                         column: x => x.MesaId,
                         principalTable: "mesas",
                         principalColumn: "MesaId",
@@ -106,24 +108,46 @@ namespace Restaurant.Migrations
             migrationBuilder.InsertData(
                 table: "mesas",
                 columns: new[] { "MesaId", "StatusId" },
-                values: new object[] { 1, 1 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_MesaItem_ItemId",
-                table: "MesaItem",
-                column: "ItemId");
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 2, 1 },
+                    { 3, 1 },
+                    { 4, 1 },
+                    { 5, 1 },
+                    { 6, 1 },
+                    { 7, 1 },
+                    { 8, 1 },
+                    { 9, 1 },
+                    { 10, 1 },
+                    { 11, 1 },
+                    { 12, 1 },
+                    { 13, 1 },
+                    { 14, 1 },
+                    { 15, 1 }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_mesas_StatusId",
                 table: "mesas",
                 column: "StatusId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_mesasitens_ItemId",
+                table: "mesasitens",
+                column: "ItemId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_mesasitens_MesaId",
+                table: "mesasitens",
+                column: "MesaId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "MesaItem");
+                name: "mesasitens");
 
             migrationBuilder.DropTable(
                 name: "Itens");

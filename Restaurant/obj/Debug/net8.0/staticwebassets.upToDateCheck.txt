@@ -1,7 +1,5 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\Images\aaaa.png
-wwwroot\Images\burguertest.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -60,3 +58,5 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\Images\aaaa.png
+wwwroot\Images\burguertest.jpg

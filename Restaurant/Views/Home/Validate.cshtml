@@ -2,6 +2,39 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-}
 
-<h1> SUCESSO! Seu pedido é @ViewData["Pedido"] na mesa @ViewData["Mesa"] </h1>
+}
+@model IEnumerable<MesaItem>;
+
+
+<div class="jpcontainer indexcontainer validatecontainer">
+    <h1> Pedido confirmado! </h1>
+    
+<form asp-controller="Home" asp-action="Pedido" asp-route-id="@ViewData["Mesa"]" method="post">
+
+    @foreach (MesaItem mesaitem in Model)
+    {
+        <div class="jpcard validatecard">
+            <img src="~/Images/burguertest.jpg" alt="Alternate Text" />
+        <div class="jpcard-text">
+            <h1 class="Product_name"> @mesaitem.item.Name </h1>
+            <p class="Description_name"> @mesaitem.item.Description </p>
+            <p class="Product_price">@mesaitem.item.Price</p>
+            <p class="Table">@mesaitem.MesaId</p>
+        </div>
+
+
+
+        <div class="buybutton-jpcontainer">
+            <button>Continuar</button>
+        </div>
+
+    </div>
+    }
+    
+</form>
+
+
+</div>
+
+

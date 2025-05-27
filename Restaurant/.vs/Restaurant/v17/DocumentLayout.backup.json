@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Migrations\\20250526022546_InitialMigrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250526022546_InitialMigrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|c:\\users\\jo\u00E3o\\onedrive\\\u00E1rea de trabalho\\projetos\\restaurant\\restaurant\\data\\restaurantedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|solutionrelative:data\\restaurantedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|c:\\users\\jo\u00E3o\\onedrive\\\u00E1rea de trabalho\\projetos\\restaurant\\restaurant\\models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|solutionrelative:models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|c:\\users\\jo\u00E3o\\onedrive\\\u00E1rea de trabalho\\projetos\\restaurant\\restaurant\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|c:\\users\\jo\u00E3o\\onedrive\\\u00E1rea de trabalho\\projetos\\restaurant\\restaurant\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|c:\\users\\jo\u00E3o\\onedrive\\\u00E1rea de trabalho\\projetos\\restaurant\\restaurant\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC6CB422-B411-46CA-8654-40849327471F}|Restaurant.csproj|solutionrelative:models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,77 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250526022546_InitialMigrate.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Migrations\\20250526022546_InitialMigrate.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250526022546_InitialMigrate.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Migrations\\20250526022546_InitialMigrate.cs",
-              "RelativeToolTip": "Migrations\\20250526022546_InitialMigrate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T02:25:46.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Mesa.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Models\\Mesa.cs",
-              "RelativeDocumentMoniker": "Models\\Mesa.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Models\\Mesa.cs",
-              "RelativeToolTip": "Models\\Mesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T02:08:50.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Models\\Status.cs",
-              "RelativeDocumentMoniker": "Models\\Status.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Models\\Status.cs",
-              "RelativeToolTip": "Models\\Status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T01:51:00.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RestauranteDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Data\\RestauranteDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\RestauranteDbContext.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Data\\RestauranteDbContext.cs",
-              "RelativeToolTip": "Data\\RestauranteDbContext.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwCMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T01:41:51.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAQwJoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAowMUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T01:38:00.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Models\\Item.cs",
-              "RelativeDocumentMoniker": "Models\\Item.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o\\OneDrive\\\u00C1rea de Trabalho\\Projetos\\Restaurant\\Restaurant\\Models\\Item.cs",
-              "RelativeToolTip": "Models\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T01:34:57.054Z"
+              "WhenOpened": "2025-05-26T01:38:00.364Z",
+              "EditorCaption": ""
             }
           ]
         }

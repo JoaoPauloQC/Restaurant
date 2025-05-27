@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 
 
 namespace Restaurant.Models
@@ -14,6 +15,7 @@ namespace Restaurant.Models
         [Required(ErrorMessage = "Preencha o preço")]
         public double Price {  get; set; }
 
-        public List<MesaItem> MesaItens { get; set; }
+        [ValidateNever]
+        public ICollection<MesaItem>? MesaItens { get; set; } = new List<MesaItem>();
     }
 }

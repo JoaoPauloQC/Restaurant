@@ -63,11 +63,32 @@ namespace Restaurant.Controllers
 
         public IActionResult Pedido(int ID = 0 ,string less = "dn")
         {
-            
+
+            IQueryable<Mesa> consulta = _context.mesas;
+
+            consulta = consulta.Where(m => m.MesaId == ID);
+            var selectedmesa = consulta.FirstOrDefault().MesaId;
+
+            if (_context == null)
+            {
+                Console.WriteLine("O contexto está null");
+            }
+            else if (_context.mesas == null)
+            {
+                Console.WriteLine("O DbSet<Mesa> está null");
+            }
+            else
+            {
+                Console.WriteLine($"Total de mesas: {_context.mesas.Count()}");
+            }
+
+
+
+
 
             ViewData["less_class"] = less;
 
-            ViewData["Mesa"] = ID;
+            ViewData["Mesa"] = selectedmesa;
             
             return View();
         }
@@ -148,14 +169,33 @@ namespace Restaurant.Controllers
                 nomes.Add(nome);
             }
             
+            
 
 
             Console.WriteLine(pedido);
             if (nomes.Contains(pedido))
             {
-                ViewData["Mesa"] = ID;
+                IQueryable<Item> consulta = _context.Itens.Where(i => i.Name == pedido);
+                Item selecteditem = consulta.FirstOrDefault();
+                Console.WriteLine(selecteditem.Name);
+                IQueryable<Mesa> consultamesa = _context.mesas.Where(m => m.MesaId == ID);
+                Mesa selectedmesa = consultamesa.FirstOrDefault();
+                Console.WriteLine(selecteditem.Name);
+
+
+                MesaItem mesaitem = new MesaItem { ItemId = selecteditem.ItemId, item = selecteditem, MesaId = ID , mesa = selectedmesa};
+                selecteditem.MesaItens.Add(mesaitem);
+                selectedmesa.MesaItens.Add(mesaitem);
+                _context.mesasitens.Add(mesaitem);
+                _context.SaveChanges();
+
+                
+
+                IEnumerable<MesaItem> mesaitens = _context.mesasitens.Where(m => m.MesaId == selectedmesa.MesaId).ToList();
+
+                ViewData["Mesa"] = selectedmesa;
                 ViewData["Pedido"] = pedido;
-                return View();
+                return View(mesaitens);
             }
             else
             {

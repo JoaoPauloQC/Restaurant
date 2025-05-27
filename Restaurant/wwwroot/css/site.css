@@ -433,3 +433,19 @@ li:hover .text-dark{
   color: #f91517 !important;
 
 }
+
+
+.validatecard{
+  max-width: 100%;
+  height: auto;
+  grid-template-rows: auto;
+}
+
+.validatecard img{
+  max-width: 100%;
+  height: 200px;
+}
+
+.validatecontainer{
+  overflow: scroll;
+}

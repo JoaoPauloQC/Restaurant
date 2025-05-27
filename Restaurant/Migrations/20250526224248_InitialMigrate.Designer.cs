@@ -11,7 +11,7 @@ using Restaurant.Data;
 namespace Restaurant.Migrations
 {
     [DbContext(typeof(RestauranteDbContext))]
-    [Migration("20250526022546_InitialMigrate")]
+    [Migration("20250526224248_InitialMigrate")]
     partial class InitialMigrate
     {
         /// <inheritdoc />
@@ -100,22 +100,100 @@ namespace Restaurant.Migrations
                         {
                             MesaId = 1,
                             StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 2,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 3,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 4,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 5,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 6,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 7,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 8,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 9,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 10,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 11,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 12,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 13,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 14,
+                            StatusId = 1
+                        },
+                        new
+                        {
+                            MesaId = 15,
+                            StatusId = 1
                         });
                 });
 
             modelBuilder.Entity("Restaurant.Models.MesaItem", b =>
                 {
-                    b.Property<int>("MesaId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("ItemId")
                         .HasColumnType("int");
 
-                    b.HasKey("MesaId", "ItemId");
+                    b.Property<int>("MesaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("ItemId");
 
-                    b.ToTable("MesaItem");
+                    b.HasIndex("MesaId");
+
+                    b.ToTable("mesasitens");
                 });
 
             modelBuilder.Entity("Restaurant.Models.Status", b =>

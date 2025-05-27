@@ -14,7 +14,7 @@ namespace Restaurant.Models
         public Status Status { get; set; }
 
         [ValidateNever]
-        public List<MesaItem> MesaItens { get; set; }
+        public List<MesaItem>? MesaItens { get; set; } = new List<MesaItem>();
 
     }
 }
