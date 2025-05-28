@@ -17,61 +17,61 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Restaurant
 build_property.RootNamespace = Restaurant
-build_property.ProjectDir = C:\Users\João\OneDrive\Área de Trabalho\Projetos\Restaurant\Restaurant\
+build_property.ProjectDir = C:\Users\joaop\OneDrive\Área de Trabalho\Projetos\Restaurant\Restaurant\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\João\OneDrive\Área de Trabalho\Projetos\Restaurant\Restaurant
+build_property.MSBuildProjectDirectory = C:\Users\joaop\OneDrive\Área de Trabalho\Projetos\Restaurant\Restaurant
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Adicionar.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Adicionar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGljaW9uYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Index.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Pedido.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Pedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZWRpZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Privacy.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Products.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Remover.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Remover.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZW1vdmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Validate.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Home/Validate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWYWxpZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Shared/Error.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/_ViewImports.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/_ViewStart.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/João/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Shared/_Layout.cshtml]
+[C:/Users/joaop/OneDrive/Área de Trabalho/Projetos/Restaurant/Restaurant/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dfffm0vbnq
