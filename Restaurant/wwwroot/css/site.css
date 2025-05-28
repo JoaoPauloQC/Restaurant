@@ -263,10 +263,18 @@ main {
   border: 1px solid #ecd3d3fa;
   box-shadow: -1px 1px 4px 1px #0000001a;;
   border-radius: 5px;
-  margin-top: 100px;
+  margin-top: 90px;
   height: 800px;
   max-height: 60vh;
   max-width: 90vw;
+  transition: 0.3s linear;
+  ;
+}
+
+.indexcontainer:hover{
+  border: 0.2px solid #f91517;
+  box-shadow: 0px 0px 2px 0.5px #f91519ae;
+  
 }
 
 .indexform{
@@ -281,8 +289,8 @@ main {
   background: #592525;
  background: #592525;
   background: linear-gradient(70deg, rgba(89, 37, 37, 1) 0%, rgba(230, 0, 0, 1) 50%, rgba(255, 168, 168, 1) 100%);
-  background-size: 250%;
-  animation: degrade 5s linear infinite alternate;
+  background-size: 300%;
+  animation: degrade 8s linear infinite alternate;
   border: 2px solid white;
   color: white;
   font-size: 1.25rem;

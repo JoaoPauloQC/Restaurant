@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.Models;
 using Restaurant.Data;
+using System.Reflection.Metadata.Ecma335;
 
 
 namespace Restaurant.Controllers
@@ -55,13 +56,21 @@ namespace Restaurant.Controllers
         }
 
 
+        [HttpPost] 
+        public IActionResult ReturningToPedido(int id)
+        {
+            return RedirectToAction("Pedido", new { ID = id });
+        }
+
+
         [HttpPost]
         public IActionResult Pedido(string mesa)
         {
+            
             return RedirectToAction("Pedido", new { ID = mesa });
         }
 
-        public IActionResult Pedido(int ID = 0 ,string less = "dn")
+        public IActionResult Pedido(int ID = 1 ,string less = "dn")
         {
 
             IQueryable<Mesa> consulta = _context.mesas;
@@ -89,7 +98,7 @@ namespace Restaurant.Controllers
             ViewData["less_class"] = less;
 
             ViewData["Mesa"] = selectedmesa;
-            
+
             return View();
         }
 
@@ -158,6 +167,7 @@ namespace Restaurant.Controllers
         [HttpPost]
         public IActionResult Validate(string pedido , int ID)
         {
+            int id = ID;
 
             ViewBag.Itens = _context.Itens.ToList();
 
@@ -168,7 +178,7 @@ namespace Restaurant.Controllers
                 string nome = i.Name;
                 nomes.Add(nome);
             }
-            
+
             
 
 
@@ -176,30 +186,36 @@ namespace Restaurant.Controllers
             if (nomes.Contains(pedido))
             {
                 IQueryable<Item> consulta = _context.Itens.Where(i => i.Name == pedido);
-                Item selecteditem = consulta.FirstOrDefault();
-                Console.WriteLine(selecteditem.Name);
-                IQueryable<Mesa> consultamesa = _context.mesas.Where(m => m.MesaId == ID);
-                Mesa selectedmesa = consultamesa.FirstOrDefault();
-                Console.WriteLine(selecteditem.Name);
+                Item? selecteditem = consulta.FirstOrDefault();
+                IQueryable<Mesa>? consultamesa = _context.mesas.Where(m => m.MesaId == ID);
+                Mesa? selectedmesa = consultamesa.FirstOrDefault();
+                if (selecteditem != null && selectedmesa != null)
+                {
+                    Console.WriteLine(selecteditem.Name);
+                    Console.WriteLine(selecteditem.Name);
 
 
-                MesaItem mesaitem = new MesaItem { ItemId = selecteditem.ItemId, item = selecteditem, MesaId = ID , mesa = selectedmesa};
-                selecteditem.MesaItens.Add(mesaitem);
-                selectedmesa.MesaItens.Add(mesaitem);
-                _context.mesasitens.Add(mesaitem);
-                _context.SaveChanges();
+                    MesaItem mesaitem = new MesaItem { ItemId = selecteditem.ItemId, item = selecteditem, MesaId = ID, mesa = selectedmesa };
+                    selecteditem.MesaItens.Add(mesaitem);
+                    selectedmesa.MesaItens.Add(mesaitem);
+                    _context.mesasitens.Add(mesaitem);
+                    _context.SaveChanges();
 
-                
 
-                IEnumerable<MesaItem> mesaitens = _context.mesasitens.Where(m => m.MesaId == selectedmesa.MesaId).ToList();
 
-                ViewData["Mesa"] = selectedmesa;
-                ViewData["Pedido"] = pedido;
-                return View(mesaitens);
-            }
+                    IEnumerable<MesaItem> mesaitens = _context.mesasitens.Where(m => m.MesaId == selectedmesa.MesaId).ToList();
+
+                    ViewData["Mesa"] = id;
+                    ViewData["Pedido"] = pedido;
+                    return View(mesaitens);
+                }
+
+                return RedirectToAction("Index");
+                }
+
             else
             {
-                return RedirectToAction("Pedido" , new { less = "less"});
+                return RedirectToAction("Pedido" , new { ID = id  , less = "less"});
             }
         }
     }

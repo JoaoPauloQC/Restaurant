@@ -1,4 +1,3 @@
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Images\aaaa.png
 wwwroot\Images\burguertest.jpg
